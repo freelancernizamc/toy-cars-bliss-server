@@ -1,0 +1,185 @@
+[
+    {
+        "id": 1,
+        "toy_name": "Red Sports Car",
+        "category": "Cars",
+        "price": 29.99,
+        "available_quantity": 10,
+        "rating": 4.5,
+        "image": "https://i.ibb.co/sbyqptQ/sports.jpg"
+    },
+    {
+        "id": 2,
+        "toy_name": "Blue Monster Truck",
+        "category": "Trucks",
+        "price": 39.99,
+        "available_quantity": 5,
+        "rating": 4.6,
+        "image": "https://example.com/blue_monster_truck.jpg"
+    },
+    {
+        "id": 3,
+        "toy_name": "Police Toy Car",
+        "category": "Cars",
+        "price": 19.99,
+        "available_quantity": 20,
+        "rating": 4.9,
+        "image": "https://i.ibb.co/Pmn8QrH/policecar.jpg"
+    },
+    {
+        "id": 4,
+        "toy_name": "Green Off-Roader",
+        "category": "Vehicles",
+        "price": 34.99,
+        "available_quantity": 8,
+        "rating": 4.5,
+        "image": "https://example.com/green_off_roader.jpg"
+    },
+    {
+        "id": 5,
+        "toy_name": "Electric Toy Car",
+        "category": "Cars",
+        "price": 24.99,
+        "available_quantity": 15,
+        "rating": 4.9,
+        "image": "https://i.ibb.co/4RxGbbG/electric-toy-car.jpg"
+    },
+    {
+        "id": 6,
+        "toy_name": "Fire Toy Track",
+        "category": "Cars",
+        "price": 27.99,
+        "available_quantity": 12,
+        "rating": 5,
+        "image": "https://i.ibb.co/WDNmpxn/firetruck.jpg"
+    },
+    {
+        "id": 7,
+        "toy_name": "Trucks Toy",
+        "category": "Cars",
+        "price": 31.99,
+        "available_quantity": 6,
+        "rating": 4.9,
+        "image": "https://i.ibb.co/dWWPhKQ/truckstoy.jpg"
+    },
+    {
+        "id": 8,
+        "toy_name": "Truck Ride Toy",
+        "category": "Cars",
+        "price": 28.99,
+        "available_quantity": 9,
+        "rating": 5,
+        "image": "https://i.ibb.co/RPmYzP4/truck-ride-toy.jpg"
+    },
+    {
+        "id": 9,
+        "toy_name": "White Ambulance",
+        "category": "Vehicles",
+        "price": 26.99,
+        "available_quantity": 7,
+        "image": "https://example.com/white_ambulance.jpg"
+    },
+    {
+        "id": 10,
+        "toy_name": "Engineearing Vechiles Toy",
+        "category": "Cars",
+        "price": 49.99,
+        "available_quantity": 3,
+        "rating": 4.9,
+        "image": "https://i.ibb.co/1ZsX5F8/engineearingvehicles.jpg"
+    },
+    {
+        "id": 11,
+        "toy_name": "Red Fire Truck",
+        "category": "Trucks",
+        "price": 36.99,
+        "available_quantity": 4,
+        "image": "https://example.com/red_fire_truck.jpg"
+    },
+    {
+        "id": 12,
+        "toy_name": "Blue Delivery Van",
+        "category": "vehicles",
+        "price": 32.99,
+        "available_quantity": 5,
+        "image": "https://example.com/blue_delivery_van.jpg"
+    },
+    {
+        "id": 13,
+        "toy_name": "Yellow Construction Truck",
+        "category": "Vehicles",
+        "price": 39.99,
+        "available_quantity": 2,
+        "image": "https://example.com/yellow_construction_truck.jpg"
+    },
+    {
+        "id": 14,
+        "toy_name": "Green Farm Tractor",
+        "category": "Vehicles",
+        "price": 33.99,
+        "available_quantity": 6,
+        "image": "https://example.com/green_farm_tractor.jpg"
+    },
+    {
+        "id": 14,
+        "toy_name": "Green Farm Tractor",
+        "category": "Vehicles",
+        "price": 33.99,
+        "available_quantity": 6,
+        "image": "https://example.com/green_farm_tractor.jpg"
+    },
+    {
+        "id": 15,
+        "toy_name": "Pull Back Vehicles",
+        "category": "Cars",
+        "price": 21.99,
+        "available_quantity": 10,
+        "rating": 4.9,
+        "image": "https://i.ibb.co/3C3x5GL/pullbackvehicles.jpg"
+    },
+    {
+        "id": 16,
+        "toy_name": "Orange Sports Bike",
+        "category": "Bikes",
+        "price": 19.99,
+        "available_quantity": 15,
+        "rating": 4.7,
+        "image": "https://example.com/orange_sports_bike.jpg"
+    },
+    {
+        "id": 17,
+        "toy_name": "Purple Skateboard",
+        "category": "Skateboards",
+        "price": 14.99,
+        "available_quantity": 18,
+        "rating": 4.8,
+        "image": "https://example.com/purple_skateboard.jpg"
+    },
+    {
+        "id": 18,
+        "toy_name": "XDDIAS Vehicles Toy",
+        "category": "Cars",
+        "price": 44.99,
+        "available_quantity": 3,
+        "rating": 4.6,
+        "image": "https://i.ibb.co/swd3c4T/xddias-vehicles.jpg"
+    },
+    {
+        "id": 19,
+        "toy_name": "White Snowplow Truck",
+        "category": "Trucks",
+        "price": 37.99,
+        "available_quantity": 4,
+        "rating": 4.9,
+        "image": "https://example.com/white_snowplow_truck.jpg"
+    },
+    {
+        "id": 20,
+        "toy_name": "Black Police Motorcycle",
+        "category": "Motorcycles",
+        "price": 29.99,
+        "available_quantity": 8,
+        "rating": 5,
+        "image": "https://example.com/black_police_motorcycle.jpg"
+    }
+]
