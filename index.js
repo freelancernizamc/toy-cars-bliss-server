@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const { MongoClient, ServerApiVersion } = require('mongodb');
-// const fs = require('fs');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -32,26 +32,15 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        // Connect the client to the server (optional starting in v4.7)
-        // client.connect();
-        // app.use(express.static('public'));
+        // await client.connect();
+        const toysCollection = client.db('toyCars').collection('toys');
+        const newToysCollection = client.db('toyCars').collection('toys');
 
-        // ...
-
-        app.get('/toys', (req, res) => {
-            try {
-                const toysData = fs.readFileSync('./data/toys.json', 'utf8');
-                res.json(JSON.parse(toysData));
-            } catch (error) {
-                console.error(error);
-                res.status(500).json({ error: 'Internal Server Error' });
-            }
-        });
 
 
         app.get('/toys', async (req, res) => {
             try {
-                const toysCollection = client.db('toys').collection('toys');
+
                 const toysData = await toysCollection.find().toArray();
                 res.json(toysData);
             } catch (error) {
@@ -61,7 +50,46 @@ async function run() {
         });
 
 
-        // ...
+        app.get('/toys/:id', async (req, res) => {
+            try {
+                const toyId = req.params.id;
+                const toy = await toysCollection.findOne({ _id: ObjectId(toyId) });
+                if (toy) {
+                    res.json(toy);
+                } else {
+                    res.status(404).json({ error: 'Toy not found' });
+                }
+            } catch (error) {
+                console.error(error);
+                res.status(500).json({ error: 'Internal Server Error' });
+            }
+        });
+
+
+        app.post('/api/toys', async (req, res) => {
+            const { pictureUrl, name, sellerName, sellerEmail, category, price, rating, availableQuantity, description } = req.body;
+            const toyData = {
+                pictureUrl,
+                name,
+                sellerName,
+                sellerEmail,
+                category,
+                price,
+                rating,
+                availableQuantity,
+                description,
+            };
+
+            newToysCollection.insertOne(toyData, (err) => {
+                if (err) {
+                    console.error(err);
+                    res.status(500).send('Error saving the toy');
+                } else {
+                    res.status(200).send('Toy saved successfully');
+                }
+            });
+        });
+
 
 
         // Send a ping to confirm a successful connection
