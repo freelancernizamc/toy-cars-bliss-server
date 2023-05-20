@@ -32,7 +32,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        // await client.connect();
+        await client.connect();
         const toysCollection = client.db('toyCars').collection('toys');
         const newToysCollection = client.db('toyCars').collection('toys');
 
@@ -50,19 +50,13 @@ async function run() {
         });
 
 
-        app.get('/toys/:id', async (req, res) => {
-            try {
-                const toyId = req.params.id;
-                const toy = await toysCollection.findOne({ _id: ObjectId(toyId) });
-                if (toy) {
-                    res.json(toy);
-                } else {
-                    res.status(404).json({ error: 'Toy not found' });
-                }
-            } catch (error) {
-                console.error(error);
-                res.status(500).json({ error: 'Internal Server Error' });
-            }
+        app.get('/toy/:id', async (req, res) => {
+
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) }
+            const toy = await toysCollection.findOne(query)
+            res.send(toy)
+
         });
 
 
